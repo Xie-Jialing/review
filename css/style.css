@@ -54,6 +54,65 @@ img{
 .wrap{
     max-width:1920px;
 }
-.header{
-    
+.m-auto{
+    margin: 0 auto;
+    max-width:1200px;
 }
+.big-title{
+    border-bottom:2px solid #000;
+}
+.big-title h1{
+    font-size: 80px;
+    padding-top: 48px;
+    padding-bottom: 24px;
+    line-height: 90px;
+}
+.header-img{
+    padding: 48px 0;
+}
+.small-title{
+    border-bottom:1px solid #000;
+    line-height: 45px;
+}
+.py-b{
+    padding-bottom: 8px;
+}
+.small-title .chinese{
+    font-size: 32px;
+    padding-right:8px;
+}
+.small-title .english{
+    font-size: 24px;
+    color: #a00404;
+    padding-left: 8px;
+}
+.person-main,.education-main{
+    font-size: 24px;
+    line-height: 36px;
+    position: relative;
+}
+.person-main::before,.education-main li::before{
+    content:"";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: #96a9c4;
+    border-radius:50%;
+    top: 24px;
+    left: 20px;
+}
+.person-main li,.education-main li{
+    text-indent:48px;
+}
+.py-16{
+    padding: 16px 0;
+}
+.py-8{
+    padding-top: 8px;
+    padding-bottom: 72px;
+}
+.py-16-72{
+    padding-top: 16px;
+    padding-bottom: 72px;
+}
+
