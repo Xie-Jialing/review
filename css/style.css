@@ -70,28 +70,29 @@ img{
 .header-img{
     padding: 48px 0;
 }
-.small-title{
+.small-title,.work-title{
     border-bottom:1px solid #000;
-    line-height: 45px;
 }
 .py-b{
     padding-bottom: 8px;
 }
-.small-title .chinese{
+.chinese{
     font-size: 32px;
     padding-right:8px;
+    line-height: 45px;
 }
-.small-title .english{
+.english{
     font-size: 24px;
     color: #a00404;
     padding-left: 8px;
+    line-height: 32px;
 }
 .person-main,.education-main{
     font-size: 24px;
     line-height: 36px;
     position: relative;
 }
-.person-main::before,.education-main li::before{
+.person-main::before{
     content:"";
     position: absolute;
     width: 16px;
@@ -103,6 +104,7 @@ img{
 }
 .person-main li,.education-main li{
     text-indent:48px;
+    position: relative;
 }
 .py-16{
     padding: 16px 0;
@@ -115,4 +117,115 @@ img{
     padding-top: 16px;
     padding-bottom: 72px;
 }
+.education-main li::before{
+    content:"";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background:#96A9C4;
+    border-radius:50px;
+    left: 16px;
+    top: 25px;
+}
 
+.education-main li:first-child::after{
+    content:'';
+    position: absolute;
+    width: 1px;
+    background:#96A9C4;
+    height: 66px;
+    top: 40px;
+    left: 24px;
+}
+.skill-bg{
+    height: 360px;
+    background: #96A9C4;
+    margin-bottom: -430px;
+    margin-top: 70px;
+}
+.skill{
+    background: #415165;
+    color: #ffffff;
+    padding-top: 24px;
+    margin-bottom: 72px;
+    padding-bottom: 55.5px;
+}
+.skill h2{
+    font-size: 32px;
+    padding-bottom: 8px;
+    border-bottom:1px solid #fff;
+    text-align: center;
+    line-height: 36px;
+    margin-bottom: 40px;
+}
+.skill .title{
+    font-size: 24px;
+    line-height: 32px;
+    padding-left: 16px;
+}
+.skill ul{
+    width: 216px;
+    margin: 0 auto;
+    border-left:1px solid #fff;
+    padding-left: 24px;
+}
+.skill li{
+    padding-bottom: 16px;
+    font-size: 24px;
+    line-height: 36px;
+}
+.work-main{
+    margin-top: 22px;
+    margin-bottom: 72px;
+    border-left:1px solid #96A9C4;
+    padding-left: 24px;
+    margin-left: 50px;
+}
+.work-main h3{
+    font-size: 24px;
+    line-height: 36px;
+    padding-bottom: 8px;
+}
+.work-main p{
+    width: 642px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 8.15px;
+    margin-bottom: 32px;
+}
+.footer{
+    background: #415165;
+    color: #ffffff;
+}
+.footer h2{
+    font-size: 32px;
+    line-height: 45px;
+    border-bottom:1px solid #fff;
+    text-align: center;
+    padding-top: 24px;
+    padding-bottom: 8px;
+}
+.footer span{
+    padding-left: 16px;
+    font-size: 24px;
+    line-height: 32px;
+}
+.footer p{
+    font-size: 24px;
+    line-height: 36px;
+
+}
+.footer .mail{
+    padding-top: 32px;
+}
+.footer-main{
+    text-align: center;
+}
+.icon{
+    padding-bottom: 48px;
+    padding-top: 16px;
+}
+.icon img{
+    display:inline-block;
+    padding-right: 16px;
+}
